@@ -4,6 +4,52 @@
   --color-main-color:#6082B6;
 }
 
+:root {
+  --font-Ubuntu: 'Ubuntu', sans-serif;
+}
+
+body {
+  font-family: var(--font-Ubuntu);
+}
+
+
+/* Text Glittering Effect  */
+
+@layer utilities {
+  .shine-wrapper {
+    @apply relative inline-block;
+  }
+
+  .base-text {
+    @apply text-black font-bold;
+  }
+
+  .shine-text {
+    @apply absolute inset-0 font-bold pointer-events-none;
+    color: transparent;
+    background: linear-gradient(
+      120deg,
+      transparent 40%,
+      rgba(255, 255, 255, 0.95) 50%,
+      transparent 60%
+    );
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: shine 2.5s linear infinite;
+  }
+
+  @keyframes shine {
+    to {
+      background-position: -200% center;
+    }
+  }
+
+  
+}
+
+
+/* Floating Profile Pic  */
 
 .profile-blob {
   width: 300px;

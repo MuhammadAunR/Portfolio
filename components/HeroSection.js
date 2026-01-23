@@ -5,13 +5,13 @@ import React from 'react'
 const HeroSection = () => {
     return (
         <>
-            <main className='h-fit'>
+            <section id='home' className='w-10/12  mx-auto py-28' data-aos="fade-up">
                 
-                <section className='flex justify-between mt-28'>
-                    <div className='w-1/2 flex flex-col gap-10'>
-                        <h1 className='font-bold text-6xl tracking-wider'>Full Stack Developer</h1>
-                        <p className='text-xl text-gray-600'>Hi, I'm <strong>Muhammad Aun</strong>. I am a Full Stack Developer creating user-friendly web applications and managing secure, scalable cloud infrastructure. I bridge the gap between development and operations, ensuring efficient, high-quality solutions</p>
-                        <div className='flex gap-5'>
+                <section className='flex justify-between items-center gap-x-2 gap-y-7 max-lg:flex-wrap-reverse max-lg:justify-center lg:pt-28'>
+                    <div className='w-1/2 max-lg:w-full flex flex-col gap-7'>
+                        <h1 className='font-bold text-6xl max-lg:text-center max-sm:text-4xl'>Full Stack Developer</h1>
+                        <p className='text-xl max-sm:text-lg text-gray-600 lg:text-justify text-center'>Hi, I'm <strong>Muhammad Aun</strong>. I am a <strong>Full Stack Developer</strong> creating user-friendly web applications and managing secure, scalable cloud infrastructure. I bridge the gap between development and operations, ensuring efficient, high-quality solutions 👨‍💻</p>
+                        <div className='flex gap-5 items-center max-lg:justify-center'>
                             <Link
                                 href="https://www.linkedin.com/in/muhammad-aun-rasheed-45a177301/"
                                 target="_blank"
@@ -46,16 +46,16 @@ const HeroSection = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className='overflow-hidden rounded-4xl w-fit profile-blob'>
-                        <Image src={'/profile.jpg'} alt='Profile Picture' width={300} height={0} unoptimized loading='lazy' />
+                    <div className='overflow-hidden rounded-4xl lg:mr-22 profile-blob'>
+                        <Image src={'/profile.jpg'} alt='Profile Picture' width={400} height={0} unoptimized loading='lazy' />
                     </div>
                 </section>
 
-                <section className='my-14 flex gap-7 items-center'>
-                    <h4 className='text-2xl font-semibold'>Tech Toolkit</h4>
-                    <div className='w-px h-10 bg-main-color'></div>
-                    <div>
-                        <div className='flex gap-4'>
+                <section className='my-15 flex gap-7 items-center max-lg:flex-wrap max-lg:justify-center'>
+                    <h4 className='text-2xl font-semibold'>Tech ToolKit</h4>
+                    <div className='w-px h-10 bg-main-color max-lg:hidden'></div>
+                    <div data-aos="fade-right">
+                        <div className='flex gap-4 flex-wrap items-center justify-center'>
                             <div className='hover:scale-110 transition-transform ease-in-out duration-300'>
                                 <Image src={'https://skillicons.dev/icons?i=html,css'} alt='html,css' width={100} height={50} unoptimized />
                             </div>
@@ -84,7 +84,7 @@ const HeroSection = () => {
                         </div>
                     </div>
                 </section>
-            </main>
+            </section>
         </>
     )
 }
