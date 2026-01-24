@@ -4,7 +4,7 @@ import React from 'react'
 const Navbar = () => {
     return (
         <>
-            <nav className='flex justify-between max-md:justify-center w-full px-12 py-5 bg-white shadow-xl mb-14 fixed top-0 z-10' data-aos="fade-down">
+            <nav className='flex justify-between items-center max-md:justify-center w-full 2xl:max-w-384 px-12 py-5 bg-white shadow-xl mb-14 fixed top-0 z-10' data-aos="fade-down">
                 <div className=''>
                     <h1 className="text-2xl font-semibold shine-wrapper">
                         <span className="base-text">
@@ -15,7 +15,7 @@ const Navbar = () => {
                         </span>
                     </h1>
                 </div>
-                <ul className='flex gap-15 font-semibold text-xl max-md:hidden'>
+                <ul className='flex gap-15 max-lg:gap-10 font-semibold text-xl max-md:hidden'>
                     <Link href={'#home'}>
                         <li className='cursor-pointer hover:text-main-color transition-colors ease-in-out'>Home</li>
                     </Link>
@@ -26,7 +26,7 @@ const Navbar = () => {
                         <li className='cursor-pointer hover:text-main-color transition-colors ease-in-out'>Projects</li>
                     </Link>
                     <Link href={'#contactus'}>
-                        <li className='cursor-pointer hover:text-main-color transition-colors ease-in-out'>Contacts</li>
+                        <li className='cursor-pointer hover:text-main-color transition-colors ease-in-out'>Contact</li>
                     </Link>
                 </ul>
             </nav>

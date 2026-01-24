@@ -5,7 +5,7 @@ import React from 'react'
 const ContactUs = () => {
     return (
         <>
-            <section className='w-10/12 mx-auto h-fit py-7'>
+            <section id='contactus' className='w-10/12 mx-auto h-fit py-7'>
                 <div className="py-12">
                     <h3 className='uppercase text-main-color font-bold'>Portfolio</h3>
                     <h2 className="text-2xl font-semibold shine-wrapper">
@@ -30,13 +30,13 @@ const ContactUs = () => {
                         <div className='bg-white p-2 rounded-full shadow-[5px_5px_7px_rgba(0,0,0,0.35)]'><Mail /></div>
                         <div>
                             <h4 className='uppercase text-xl font-semibold'>Email</h4>
-                            <Link href={'#home'} className='hover:text-main-color'>maunrasheed.dev@gmail.com</Link>
+                            <Link href={'mailto:maunrasheed.dev@gmail.com'} className='hover:text-main-color'>maunrasheed.dev@gmail.com</Link>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <footer className='bg-gray-700 text-white py-7 mt-5'>
+            <footer className='bg-gray-800 text-white py-7 mt-5'>
                 <div className='w-10/12 mx-auto flex justify-between max-md:flex-wrap-reverse max-md:justify-center gap-7'>
                     <p className='text-xl max-sm:text-center'>
                         Copyright &copy; 2026. All rights are reserved.

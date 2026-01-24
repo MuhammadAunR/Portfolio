@@ -1,15 +1,28 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { ReactTyped } from 'react-typed'
 
 const HeroSection = () => {
     return (
         <>
-            <section id='home' className='w-10/12  mx-auto py-28' data-aos="fade-up">
-                
+            <section id='home' className='w-10/12 mx-auto py-28' data-aos="fade-up">
+
                 <section className='flex justify-between items-center gap-x-2 gap-y-7 max-lg:flex-wrap-reverse max-lg:justify-center lg:pt-28'>
                     <div className='w-1/2 max-lg:w-full flex flex-col gap-7'>
-                        <h1 className='font-bold text-6xl max-lg:text-center max-sm:text-4xl'>Full Stack Developer</h1>
+                        {/* <h1 className='font-bold text-6xl max-lg:text-center max-sm:text-4xl'>Full Stack Developer</h1> */}
+                        <div className="text-gray-800 font-bold text-5xl max-lg:text-center max-sm:text-4xl">
+                            <h3><ReactTyped
+                                strings={[
+                                    "Programmer",
+                                    "Full Stack Developer",
+                                ]}
+                                typeSpeed={70}
+                                backSpeed={50}
+                                loop
+                            /></h3>
+                        </div>
                         <p className='text-xl max-sm:text-lg text-gray-600 lg:text-justify text-center'>Hi, I'm <strong>Muhammad Aun</strong>. I am a <strong>Full Stack Developer</strong> creating user-friendly web applications and managing secure, scalable cloud infrastructure. I bridge the gap between development and operations, ensuring efficient, high-quality solutions 👨‍💻</p>
                         <div className='flex gap-5 items-center max-lg:justify-center'>
                             <Link
