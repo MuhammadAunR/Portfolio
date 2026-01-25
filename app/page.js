@@ -37,6 +37,9 @@ export default function Home() {
 
             <ProjectCard />
 
+            <div data-aos="zoom-in">
+              <h5 className="text-center italic font-semibold cursor-pointer pt-5">More Projects Coming Soon, Stay connected 🌐</h5>
+            </div>
           </section>
         </section>
 
