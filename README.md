@@ -1,4 +1,4 @@
-# Muhammad Aun — Full Stack Developer Portfolio
+# Muhammad Aun — Mern Stack Developer Portfolio
 
 A modern, responsive personal portfolio showcasing my work, skills, and experience as a Full Stack Developer. Built with performance, scalability, and clean UI principles in mind.
 
