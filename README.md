@@ -14,7 +14,7 @@ A modern, responsive personal portfolio showcasing my work, skills, and experien
 
 ### Backend & Tools
 - **Git & GitHub**
-- **Vercel / Netlify**
+- **Vercel**
 
 ---
 
