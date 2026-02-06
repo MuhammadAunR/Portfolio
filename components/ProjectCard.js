@@ -1,10 +1,8 @@
 'use client'
 import { ExternalLink } from 'lucide-react'
 import Image from 'next/image'
-import Link from 'next/link'
 import React, { useState } from 'react'
-import PreviewPopup from './PreviewPopup'
-import SourcePopup from './SourcePopup'
+import Popup from './Popup'
 
 
 
@@ -31,18 +29,12 @@ const ProjectCard = () => {
   ];
 
   const [showPopup, setShowPopup] = useState(false)
+  const [popupType, setPopupType] = useState(null)
 
-  const handlePreviewClick = (link) => {
+  function handlePopup(type, link) {
     if (!link.trim()) {
       setShowPopup(true)
-    } else {
-      window.open(link, '_blank')
-    }
-  }
-
-  const handleSourceCode = (link) => {
-    if (!link.trim()) {
-      setShowPopup(true)
+      setPopupType(type)
     } else {
       window.open(link, '_blank')
     }
@@ -67,12 +59,12 @@ const ProjectCard = () => {
             <div className="Links flex gap-10 py-5 max-sm:flex-wrap-reverse max-sm:gap-5 max-sm:justify-center">
               <div className='flex items-center gap-2 text-xl hover:text-main-color transition-colors ease-in-out'>
 
-                <button onClick={() => handlePreviewClick(proj.previewLink)} className='font-semibold'>Preview</button>
+                <button onClick={() => handlePopup("Preview", proj.previewLink)} className='font-semibold'>Preview</button>
                 <ExternalLink />
               </div>
               <div className='flex items-center gap-2 text-xl hover:text-main-color transition-colors ease-in-out'>
 
-                <button onClick={() => handleSourceCode(proj.sourceLink)} className='font-semibold'>Source_Code</button>
+                <button onClick={() => handlePopup("Source_Code", proj.sourceLink)} className='font-semibold'>Source_Code</button>
                 <svg
                   className="h-8 w-8"
                   fill="currentColor"
@@ -89,8 +81,7 @@ const ProjectCard = () => {
           </div>
         </section>
       })}
-      {showPopup && <PreviewPopup close={() => setShowPopup(false)} />}
-      {showPopup && <SourcePopup close={() => setShowPopup(false)} />}
+      {showPopup && <Popup close={() => setShowPopup(false)} type={popupType} />}
     </>
   )
 }
