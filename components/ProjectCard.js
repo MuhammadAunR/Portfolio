@@ -1,7 +1,10 @@
+'use client'
 import { ExternalLink } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
+import PreviewPopup from './PreviewPopup'
+import SourcePopup from './SourcePopup'
 
 
 
@@ -27,15 +30,32 @@ const ProjectCard = () => {
 
   ];
 
+  const [showPopup, setShowPopup] = useState(false)
+
+  const handlePreviewClick = (link) => {
+    if (!link.trim()) {
+      setShowPopup(true)
+    } else {
+      window.open(link, '_blank')
+    }
+  }
+
+  const handleSourceCode = (link) => {
+    if (!link.trim()) {
+      setShowPopup(true)
+    } else {
+      window.open(link, '_blank')
+    }
+  }
+
   return (
     <>
       {projects.map((proj, i) => {
-
         return <section key={i} className='flex gap-3 justify-between items-center max-lg:flex-wrap h-fit  px-4 py-6 bg-white shadow-[5px_5px_7px_rgba(0,0,0,0.35)] rounded-2xl my-7'
           data-aos="fade-up">
 
           <div className='w-1/2 max-lg:w-full flex flex-col items-center gap-7'>
-            <h2 className='text-xl font-semibold uppercase max-lg:pt-5'>{proj.title}</h2>
+            <h2 className='text-2xl font-semibold uppercase max-lg:pt-5'>{proj.title}</h2>
             <p className='text-center text-lg text-gray-600'>{proj.description}</p>
             <div className='stack flex gap-5'>
               {proj.stack.map((item, i) => {
@@ -46,11 +66,13 @@ const ProjectCard = () => {
             </div>
             <div className="Links flex gap-10 py-5 max-sm:flex-wrap-reverse max-sm:gap-5 max-sm:justify-center">
               <div className='flex items-center gap-2 text-xl hover:text-main-color transition-colors ease-in-out'>
-                <Link href={proj.previewLink} target='_blank' className='font-semibold'>Preview</Link>
+
+                <button onClick={() => handlePreviewClick(proj.previewLink)} className='font-semibold'>Preview</button>
                 <ExternalLink />
               </div>
               <div className='flex items-center gap-2 text-xl hover:text-main-color transition-colors ease-in-out'>
-                <Link href={proj.sourceLink} target='_blank' className='font-semibold'>Source_Code</Link>
+
+                <button onClick={() => handleSourceCode(proj.sourceLink)} className='font-semibold'>Source_Code</button>
                 <svg
                   className="h-8 w-8"
                   fill="currentColor"
@@ -67,6 +89,8 @@ const ProjectCard = () => {
           </div>
         </section>
       })}
+      {showPopup && <PreviewPopup close={() => setShowPopup(false)} />}
+      {showPopup && <SourcePopup close={() => setShowPopup(false)} />}
     </>
   )
 }
