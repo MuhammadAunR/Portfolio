@@ -16,14 +16,6 @@ const ProjectCard = () => {
       sourceLink: "https://github.com/MuhammadAunR/Coffee-Shop",
       image: "/p1-coffeeshop.webp",
     },
-    {
-      title: "Shop.CO",
-      description: "An online platform to sell your outfit ideas in this digital world",
-      stack: ["Next.js", "Tailwind", "Strapi", "Node.js"],
-      previewLink: "",
-      sourceLink: "https://github.com/MuhammadAunR/E-Commerce-Store",
-      image: "/p2-e-store.webp",
-    },
     
   ];
 
