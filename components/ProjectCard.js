@@ -11,7 +11,7 @@ const ProjectCard = () => {
   const projects = [
     {
       title: "Coffee Shop",
-      description: "A website to sell your cup of coffee online.",
+      description: "A website to sell your cup of coffee online ☕",
       stack: ["Next.js", "Tailwind"],
       previewLink: "https://coffeeshop-7ad9.vercel.app/",
       sourceLink: "https://github.com/MuhammadAunR/Coffee-Shop",
@@ -19,7 +19,7 @@ const ProjectCard = () => {
     },
     {
       title: "Shop.CO",
-      description: "An online platform to sell your outfit ideas in this digital world",
+      description: "An online platform to sell your outfit ideas in this digital world 🛍️",
       stack: ["Next.js", "Tailwind", "Strapi", "Node.js"],
       previewLink: "",
       sourceLink: "https://github.com/MuhammadAunR/E-Commerce-Store",
