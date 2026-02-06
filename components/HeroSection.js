@@ -16,7 +16,7 @@ const HeroSection = () => {
                             <h3><ReactTyped
                                 strings={[
                                     "Programmer",
-                                    "Full Stack Developer",
+                                    "Mern Stack Developer",
                                 ]}
                                 typeSpeed={70}
                                 backSpeed={50}
