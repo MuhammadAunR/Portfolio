@@ -10,8 +10,8 @@ const ProjectCard = () => {
 
   const projects = [
     {
-      title: "Portfolio Website",
-      description: "A modern portfolio built with Next.js and Tailwind CSS.",
+      title: "Coffee Shop",
+      description: "A website to sell your cup of coffee online.",
       stack: ["Next.js", "Tailwind"],
       previewLink: "https://coffeeshop-7ad9.vercel.app/",
       sourceLink: "https://github.com/MuhammadAunR/Coffee-Shop",
