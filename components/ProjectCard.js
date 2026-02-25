@@ -25,6 +25,14 @@ const ProjectCard = () => {
       sourceLink: "https://github.com/MuhammadAunR/E-Commerce-Store",
       image: "/p2-e-store.webp",
     },
+    {
+      title: "Tripzo",
+      description: "Tripzo — A modern travel platform to discover destinations, plan trips, and book experiences seamlessly 🚞",
+      stack: ["React.js", "Tailwind"],
+      previewLink: "https://tripzo-byma.vercel.app/",
+      sourceLink: "https://github.com/MuhammadAunR/Tripzo",
+      image: "/p3-tripzo.webp",
+    },
 
   ];
 
