@@ -49,7 +49,7 @@ const ProjectCard = () => {
           <div className='w-1/2 max-lg:w-full flex flex-col items-center gap-7'>
             <h2 className='text-2xl font-semibold uppercase max-lg:pt-5'>{proj.title}</h2>
             <p className='text-center text-lg text-gray-600'>{proj.description}</p>
-            <div className='stack flex gap-5'>
+            <div className='stack flex gap-5 flex-wrap'>
               {proj.stack.map((item, i) => {
                 return (
                   <div key={i} className='bg-white text-lg shadow-[5px_5px_7px_rgba(0,0,0,0.35)] px-4 py-2'>{item}</div>
