@@ -33,6 +33,14 @@ const ProjectCard = () => {
       sourceLink: "https://github.com/MuhammadAunR/Tripzo",
       image: "/p3-tripzo.webp",
     },
+    {
+      title: "Flavor Fiesta",
+      description: "A digital platform to discover and share delicious recipes from around the world, all in one place 🧑🏻‍🍳",
+      stack: ["React.js", "Tailwind", "JS-AOS"],
+      previewLink: "https://flavor-fiesta-byma.vercel.app/",
+      sourceLink: "https://github.com/MuhammadAunR/Flavor-Fiesta",
+      image: "/p4-cooking.webp",
+    },
 
   ];
 
