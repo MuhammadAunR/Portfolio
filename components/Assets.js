@@ -33,7 +33,7 @@ export const projects = [
     },
     {
         title: "Buddy Chat",
-        description: "A simple and friendly AI chatbot built with React and Gemini API. Chat with your AI buddy anytime! 🤖",
+        description: "A simple and friendly AI chatbot built with React and GROQ API. Chat with your AI buddy anytime! 🤖",
         stack: ["React.js", "Tailwind", "Context API", "GROQ API"],
         previewLink: "https://buddy-chat-byma.vercel.app/",
         sourceLink: "https://github.com/MuhammadAunR/Buddy-Chat",
