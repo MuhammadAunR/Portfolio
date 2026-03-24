@@ -24,7 +24,7 @@ const ProjectCard = () => {
       {projects.map((proj, i) => {
         const isEven = i % 2 === 0;
         return <section key={i} className={`flex ${isEven ? 'flex-row' : 'flex-row-reverse'} gap-3 justify-between items-center max-lg:flex-wrap h-fit  px-4 py-6 bg-white shadow-[5px_5px_7px_rgba(0,0,0,0.35)] rounded-2xl my-7`}
-          data-aos={`${isEven ? 'slide-right':'slide-left'}`} >
+          data-aos={`${isEven ? 'fade-right':'fade-left'}`} >
 
           <div className='w-1/2 max-lg:w-full flex flex-col items-center gap-7'>
             <h2 className='text-2xl font-semibold uppercase max-lg:pt-5'>{proj.title}</h2>
