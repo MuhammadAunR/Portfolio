@@ -9,9 +9,9 @@ export default function Home() {
   return (
     <>
 
-      <main className="max-w-384 mx-auto">
+      <main className="max-w-384 mx-auto overflow-x-hidden">
 
-        <header className="bg-gray-100 h-fit w-full">
+        <header className="bg-gray-100 h-fit w-fit">
           <Navbar />
           <HeroSection />
         </header>

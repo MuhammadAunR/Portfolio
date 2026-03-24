@@ -48,7 +48,6 @@ const HeroSection = () => {
 
                 <section className='flex justify-between items-center gap-x-2 gap-y-7 max-lg:flex-wrap-reverse max-lg:justify-center lg:pt-28'>
                     <div className='w-1/2 max-lg:w-full flex flex-col gap-7'>
-                        {/* <h1 className='font-bold text-6xl max-lg:text-center max-sm:text-4xl'>Full Stack Developer</h1> */}
                         <div className="text-gray-800 font-bold text-5xl max-lg:text-center max-sm:text-4xl">
                             <h3>{display}</h3>
                         </div>
