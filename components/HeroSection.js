@@ -52,7 +52,7 @@ const HeroSection = () => {
                         <div className="text-gray-800 font-bold text-5xl max-lg:text-center max-sm:text-4xl">
                             <h3>{display}</h3>
                         </div>
-                        <p className='text-xl max-sm:text-lg text-gray-600 lg:text-justify text-center'>Hi, I'm <strong>Muhammad Aun</strong>. I am a <strong>Full Stack Developer</strong> creating user-friendly web applications and managing secure, scalable cloud infrastructure. I bridge the gap between development and operations, ensuring efficient, high-quality solutions 👨‍💻</p>
+                        <p className='text-xl max-sm:text-lg text-gray-600 lg:text-justify text-center'>Hi, I'm <strong>Muhammad Aun</strong>. I am a <strong>MERN Stack Developer</strong> creating user-friendly web applications and managing secure, scalable cloud infrastructure. I bridge the gap between development and operations, ensuring efficient, high-quality solutions 👨‍💻</p>
                         <div className='flex gap-5 items-center max-lg:justify-center'>
                             <Link
                                 href="https://www.linkedin.com/in/muhammad-aun-rasheed-45a177301/"
