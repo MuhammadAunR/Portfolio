@@ -39,5 +39,13 @@ export const projects = [
         sourceLink: "https://github.com/MuhammadAunR/Buddy-Chat",
         image: "/p5-buddyChat.webp",
     },
+    {
+        title: "Portfolio",
+        description: "Cinematic videographer portfolio built with React, featuring smooth scrolling and optimized video performance. 🎥",
+        stack: ["React.js", "Tailwind", "Context API", "Lenis"],
+        previewLink: "https://portfolio-content-creator-byma.vercel.app/",
+        sourceLink: "https://github.com/MuhammadAunR/Portfolio-Content-Creator",
+        image: "/p6-portfolio-creator.webp",
+    },
 
 ];
