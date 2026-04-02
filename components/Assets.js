@@ -47,5 +47,13 @@ export const projects = [
         sourceLink: "https://github.com/MuhammadAunR/Portfolio-Content-Creator",
         image: "/p6-portfolio-creator.webp",
     },
+    {
+        title: "DMR Sushi",
+        description: "A sleek restaurant website with interactive menu browsing, seamless food ordering, and easy table reservations—delivering a smooth and engaging user experience. 🍣",
+        stack: ["Next.js", "Tailwind", "Context API", "Lenis", "AOS"],
+        previewLink: "https://restaurant-website-byma.vercel.app/",
+        sourceLink: "https://github.com/MuhammadAunR/Restaurant-Website",
+        image: "/p7-restaurant-website.webp",
+    },
 
 ];
