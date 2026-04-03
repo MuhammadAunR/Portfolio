@@ -19,10 +19,10 @@ const AboutMe = () => {
                     <h3 className='uppercase text-main-color font-bold max-lg:mt-7'>About Me</h3>
                     <h2 className="text-2xl font-semibold shine-wrapper">
                         <span className="base-text">
-                            A dedicated Full Stack Developer based in Pakistan 📍
+                            A dedicated MERN Stack Developer based in Pakistan 📍
                         </span>
                         <span className="shine-text">
-                            A dedicated Full Stack Developer based in Pakistan
+                            A dedicated MERN Stack Developer based in Pakistan
                         </span>
                     </h2>
                     <code className='text-gray-600 text-justify text-xl cursor-pointer max-lg:text-center'>I am a web developer with hands-on experience building modern, scalable web applications using React, Next.js, Node.js, Express, and MongoDB. I focus on writing clean, maintainable code and developing user-centric interfaces backed by reliable backend systems. I have practical experience consuming REST APIs, implementing authentication flows, and integrating frontend applications with backend services. I continuously improve my skills through real-world projects and value problem-solving, performance optimization, and clear system design.</code>

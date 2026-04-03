@@ -2,7 +2,7 @@ import React from 'react'
 
 const RotatingWheel = () => {
 
-    const text = "MERN STACK • CODE • FULL STACK • ";
+    const text = "MERN STACK • CODE • React.js • ";
     return (
         <>
             <div className=" w-52 h-52 rounded-full bg-white flex items-center justify-center">
