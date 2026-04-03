@@ -11,7 +11,7 @@ const AboutMe = () => {
                     <div className='overflow-hidden rounded-2xl h-90 w-150 max-sm:w-90 max-sm:h-60 max-sm:px-5 relative'>
                         <Image src={'/aboutme.jpg'} alt='About Me' fill unoptimized='false' className='object-cover object-center' />
                     </div>
-                    <span className='absolute right-7 -bottom-24 max-lg:hidden'>
+                    <span data-aos='zoom-in' className='absolute right-7 -bottom-24 max-lg:hidden'>
                     <RotatingWheel/>
                     </span>
                 </div>
@@ -19,7 +19,7 @@ const AboutMe = () => {
                     <h3 className='uppercase text-main-color font-bold max-lg:mt-7'>About Me</h3>
                     <h2 className="text-2xl font-semibold shine-wrapper">
                         <span className="base-text">
-                            A dedicated MERN Stack Developer based in Pakistan 📍
+                            A dedicated MERN Stack Developer based in Pakistan📍
                         </span>
                         <span className="shine-text">
                             A dedicated MERN Stack Developer based in Pakistan
