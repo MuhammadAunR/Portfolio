@@ -1,7 +1,7 @@
 export const projects = [
     {
         title: "Coffee Shop",
-        description: "A website to sell your cup of coffee online ☕",
+        description: "Built a full online ordering experience for a coffee brand — mobile-first design with menu browsing and a smooth checkout flow to drive online sales. ☕",
         stack: ["Next.js", "Tailwind"],
         previewLink: "https://coffeeshop-7ad9.vercel.app/",
         sourceLink: "https://github.com/MuhammadAunR/Coffee-Shop",
@@ -9,7 +9,7 @@ export const projects = [
     },
     {
         title: "Shop.CO",
-        description: "An online platform to sell your outfit ideas in this digital world 🛍️",
+        description: "A complete e-commerce platform with CMS-powered product management, cart system, and scalable backend — built for real retail operations. 🛍️",
         stack: ["Next.js", "Tailwind", "Strapi", "Node.js"],
         previewLink: "",
         sourceLink: "https://github.com/MuhammadAunR/E-Commerce-Store",
@@ -17,7 +17,7 @@ export const projects = [
     },
     {
         title: "Tripzo",
-        description: "Tripzo — A modern travel platform to discover destinations, plan trips, and book experiences seamlessly 🚞",
+        description: "A travel booking platform with destination discovery, trip planning, and seamless experience booking — designed to convert visitors into customers. 🚞",
         stack: ["React.js", "Tailwind"],
         previewLink: "https://tripzo-byma.vercel.app/",
         sourceLink: "https://github.com/MuhammadAunR/Tripzo",
@@ -25,7 +25,7 @@ export const projects = [
     },
     {
         title: "Flavor Fiesta",
-        description: "A digital platform to discover and share delicious recipes from around the world, all in one place 🧑🏻‍🍳",
+        description: "A recipe-sharing platform built for engagement — users discover, save, and share recipes with a fast, animated UI that keeps them coming back. 🧑🏻‍🍳",
         stack: ["React.js", "Tailwind", "JS-AOS"],
         previewLink: "https://flavor-fiesta-byma.vercel.app/",
         sourceLink: "https://github.com/MuhammadAunR/Flavor-Fiesta",
@@ -33,15 +33,15 @@ export const projects = [
     },
     {
         title: "Buddy Chat",
-        description: "A simple and friendly AI chatbot built with React and GROQ API. Chat with your AI buddy anytime! 🤖",
+        description: "An AI-powered chatbot integrated with GROQ API — real-time responses, clean chat UI, and context-aware conversations for any web product. 🤖",
         stack: ["React.js", "Tailwind", "Context API", "GROQ API"],
         previewLink: "https://buddy-chat-byma.vercel.app/",
         sourceLink: "https://github.com/MuhammadAunR/Buddy-Chat",
         image: "/p5-buddyChat.webp",
     },
     {
-        title: "Portfolio",
-        description: "Cinematic videographer portfolio built with React, featuring smooth scrolling and optimized video performance. 🎥",
+        title: "Creator Portfolio",
+        description: "A cinematic portfolio for a content creator — optimized video loading, smooth Lenis scrolling, and a visual-first layout built to impress clients. 🎥",
         stack: ["React.js", "Tailwind", "Context API", "Lenis"],
         previewLink: "https://portfolio-content-creator-byma.vercel.app/",
         sourceLink: "https://github.com/MuhammadAunR/Portfolio-Content-Creator",
@@ -49,11 +49,18 @@ export const projects = [
     },
     {
         title: "DMR Sushi",
-        description: "A sleek restaurant website with interactive menu browsing, seamless food ordering, and easy table reservations—delivering a smooth and engaging user experience. 🍣",
+        description: "Restaurant website with interactive menu browsing, food ordering, and table reservations — reducing friction between hungry customers and the dining experience. 🍣",
         stack: ["Next.js", "Tailwind", "Context API", "Lenis", "AOS"],
         previewLink: "https://restaurant-website-byma.vercel.app/",
         sourceLink: "https://github.com/MuhammadAunR/Restaurant-Website",
         image: "/p7-restaurant-website.webp",
     },
-
+    {
+        title: "Fuoco",
+        description: "Redesigned Fuoco's brand website from Figma — elevated visual identity, mobile-optimized layout, and a premium feel that matches the brand's personality. 🔥",
+        stack: ["Next.js", "Tailwind"],
+        previewLink: "https://fuoco-restaurants-byma.vercel.app/",
+        sourceLink: "https://github.com/MuhammadAunR/Fuoco-Restaurants", 
+        image: "/p8-fuoco.webp", 
+    },
 ];
