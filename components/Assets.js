@@ -60,7 +60,7 @@ export const projects = [
         description: "Redesigned Fuoco's brand website from Figma — elevated visual identity, mobile-optimized layout, and a premium feel that matches the brand's personality. 🔥",
         stack: ["Next.js", "Tailwind"],
         previewLink: "https://fuoco-restaurants-byma.vercel.app/",
-        sourceLink: "https://github.com/MuhammadAunR/Fuoco-Restaurants", 
-        image: "/p8-fuoco.webp", 
+        sourceLink: "https://github.com/MuhammadAunR/Fuoco-Restaurants",
+        image: "/p8-fuoco.webp",
     },
 ];
