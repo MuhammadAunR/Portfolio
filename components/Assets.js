@@ -63,4 +63,12 @@ export const projects = [
         sourceLink: "https://github.com/MuhammadAunR/Fuoco-Restaurants",
         image: "/p8-fuoco.webp",
     },
+    {
+        title: "Larizo",
+        description: "Designed and developed a luxury fragrance brand website from scratch — crafted a premium UI, smooth user experience, and mobile-first layout that reflects elegance and high-end branding.",
+        stack: ["Next.js","Framer Motion", "Tailwind"],
+        previewLink: "https://larizo.vercel.app/",
+        sourceLink: "https://github.com/MuhammadAunR/Larizo",
+        image: "/p9-larizo.webp",
+    }
 ];
