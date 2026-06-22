@@ -1,17 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --color-main-color: #99c1de;
+  --color-main-color: #1A2FB9;
 }
 
 :root {
-  --font-Ubuntu: 'Ubuntu', sans-serif;
+  --font-Ubuntu: "Ubuntu", sans-serif;
 }
 
 body {
   font-family: var(--font-Ubuntu);
 }
-
 
 /* Text Glittering Effect  */
 
@@ -44,19 +43,16 @@ body {
       background-position: -200% center;
     }
   }
-  
 }
-
-/*  Floating Project Pic  */
 
 @keyframes vertical-scroll-animation {
   0% {
     transform: translateY(0);
   }
-  99%{
+  99% {
     transform: translateY(-99%);
   }
-  100%{
+  100% {
     transform: translateY(0);
   }
 }
@@ -73,7 +69,6 @@ body {
 .animate-spin-slow {
   animation: spin-slow 12s linear infinite;
 }
-
 
 /* Floating Profile Pic  */
 
@@ -101,7 +96,6 @@ body {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
 }
-
 
 ::-webkit-scrollbar {
   width: 6px;
