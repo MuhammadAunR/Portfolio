@@ -163,32 +163,20 @@ const HeroSection = () => {
           </motion.div>
         </section>
 
-        <section className="my-15 flex gap-7 items-center max-lg:flex-wrap max-lg:justify-center">
-          <motion.h4
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.96, ease: "easeInOut" }}
-            viewport={{ once: true }}
-            className="text-2xl font-semibold"
-          >
-            Tech ToolKit
-          </motion.h4>
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.96, ease: "easeInOut" }}
-            viewport={{ once: true }}
-            className="w-px h-10 bg-main-color max-lg:hidden"
-          ></motion.div>
+        <motion.section
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.96, ease: "easeInOut" }}
+          viewport={{ once: true }}
+          className="my-15 flex gap-7 items-center max-lg:flex-wrap max-lg:justify-center"
+        >
+          <h4 className="text-2xl font-semibold">Tech ToolKit</h4>
+          <div className="w-px h-10 bg-main-color max-lg:hidden"></div>
           <div>
             <div className="flex gap-4 flex-wrap items-center justify-center">
               {skillIcons.map((icon, index) => {
                 return (
-                  <motion.div
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.95, ease: "linear" }}
-                    viewport={{ once: true }}
+                  <div
                     key={icon}
                     className="hover:scale-110 transition-transform ease-in-out duration-300"
                   >
@@ -199,12 +187,12 @@ const HeroSection = () => {
                       height={50}
                       unoptimized
                     />
-                  </motion.div>
+                  </div>
                 );
               })}
             </div>
           </div>
-        </section>
+        </motion.section>
       </section>
     </>
   );
