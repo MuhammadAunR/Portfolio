@@ -63,8 +63,8 @@ const HeroSection = () => {
         <section className="flex justify-between items-center gap-x-2 gap-y-7 max-lg:flex-wrap-reverse max-lg:justify-center lg:pt-28">
           <div className="w-1/2 max-lg:w-full flex flex-col gap-7">
             <motion.div
-              initial={{ opacity: 0, x: -30, filter: "blur(8px)" }}
-              whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.96, ease: "easeInOut" }}
               viewport={{ once: true }}
               className="text-gray-800 font-bold text-5xl max-lg:text-center max-sm:text-4xl"
@@ -72,8 +72,8 @@ const HeroSection = () => {
               <h3>{display}</h3>
             </motion.div>
             <motion.p
-              initial={{ opacity: 0, x: -30, filter: "blur(8px)" }}
-              whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.96, ease: "easeInOut" }}
               viewport={{ once: true }}
               className="text-xl max-sm:text-lg text-gray-600 lg:text-justify text-center"
@@ -85,8 +85,8 @@ const HeroSection = () => {
               efficient, high-quality solutions 👨‍💻
             </motion.p>
             <motion.div
-              initial={{ opacity: 0, x: -30, filter: "blur(8px)" }}
-              whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.96, ease: "easeInOut" }}
               viewport={{ once: true }}
               className="flex gap-5 items-center max-lg:justify-center"
@@ -146,8 +146,8 @@ const HeroSection = () => {
             </motion.div>
           </div>
           <motion.div
-            initial={{ opacity: 0, x: 30, filter: "blur(8px)" }}
-            whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.96, ease: "easeInOut" }}
             viewport={{ once: true }}
             className="overflow-hidden rounded-4xl lg:mr-22 profile-blob"
@@ -165,8 +165,8 @@ const HeroSection = () => {
 
         <section className="my-15 flex gap-7 items-center max-lg:flex-wrap max-lg:justify-center">
           <motion.h4
-            initial={{ opacity: 0, x: -30, filter: "blur(8px)" }}
-            whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.96, ease: "easeInOut" }}
             viewport={{ once: true }}
             className="text-2xl font-semibold"
@@ -174,8 +174,8 @@ const HeroSection = () => {
             Tech ToolKit
           </motion.h4>
           <motion.div
-            initial={{ opacity: 0, x: -30, filter: "blur(8px)" }}
-            whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.96, ease: "easeInOut" }}
             viewport={{ once: true }}
             className="w-px h-10 bg-main-color max-lg:hidden"
@@ -185,8 +185,8 @@ const HeroSection = () => {
               {skillIcons.map((icon, index) => {
                 return (
                   <motion.div
-                    initial={{ opacity: 0, x: -20, filter: "blur(8px)" }}
-                    whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.95, ease: "linear" }}
                     viewport={{ once: true }}
                     key={icon}

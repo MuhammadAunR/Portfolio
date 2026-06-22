@@ -1,18 +1,18 @@
-'use client'
-import { ExternalLink } from 'lucide-react'
-import Image from 'next/image'
-import React, { useState } from 'react'
-import Popup from './Popup'
-import { projects } from './Assets'
+"use client";
+import { ExternalLink } from "lucide-react";
+import Image from "next/image";
+import React, { useState } from "react";
+import Popup from "./Popup";
+import { projects } from "./Assets";
+import { motion } from "motion/react";
 
 const ProjectCard = () => {
-
-  const [showPopup, setShowPopup] = useState(false)
-  const [popupType, setPopupType] = useState(null)
+  const [showPopup, setShowPopup] = useState(false);
+  const [popupType, setPopupType] = useState(null);
 
   function handlePopup(type) {
-    setShowPopup(true)
-    setPopupType(type)
+    setShowPopup(true);
+    setPopupType(type);
   }
 
   return (
@@ -21,26 +21,28 @@ const ProjectCard = () => {
         const isEven = i % 2 === 0;
 
         return (
-          <section
+          <motion.section
+            initial={{ opacity: 0, x: isEven ? -30 : 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.96, ease: "linear" }}
+            viewport={{ once: true }}
             key={i}
-            className={`flex ${isEven ? 'flex-row' : 'flex-row-reverse'} gap-3 justify-between items-center max-lg:flex-wrap h-fit px-4 py-6 bg-white shadow-[5px_5px_7px_rgba(0,0,0,0.35)] rounded-2xl my-7`}
-            data-aos={`${isEven ? 'fade-right' : 'fade-left'}`}
+            className={`flex ${isEven ? "flex-row" : "flex-row-reverse"} gap-3 justify-between items-center max-lg:flex-wrap h-fit px-4 py-6 bg-white shadow-[5px_5px_7px_rgba(0,0,0,0.35)] rounded-2xl my-7`}
           >
-
-            <div className='w-1/2 max-lg:w-full flex flex-col items-center gap-7'>
-              <h2 className='text-2xl font-semibold uppercase max-lg:pt-5'>
+            <div className="w-1/2 max-lg:w-full flex flex-col items-center gap-7">
+              <h2 className="text-2xl font-semibold uppercase max-lg:pt-5">
                 {proj.title}
               </h2>
 
-              <p className='text-center text-lg text-gray-600'>
+              <p className="text-center text-lg text-gray-600">
                 {proj.description}
               </p>
 
-              <div className='stack flex items-center justify-center gap-5 flex-wrap'>
+              <div className="stack flex items-center justify-center gap-5 flex-wrap">
                 {proj.stack.map((item, i) => (
                   <div
                     key={i}
-                    className='bg-white text-lg shadow-[5px_5px_7px_rgba(0,0,0,0.35)] px-4 py-2'
+                    className="bg-white text-lg shadow-[5px_5px_7px_rgba(0,0,0,0.35)] px-4 py-2"
                   >
                     {item}
                   </div>
@@ -48,13 +50,12 @@ const ProjectCard = () => {
               </div>
 
               <div className="flex gap-10 py-5 max-sm:flex-wrap-reverse max-sm:gap-5 max-sm:justify-center">
-
                 {proj.previewLink?.trim() ? (
                   <a
                     href={proj.previewLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className='flex items-center gap-2 text-xl font-semibold hover:text-main-color transition-colors'
+                    className="flex items-center gap-2 text-xl font-semibold hover:text-main-color transition-colors"
                   >
                     Preview
                     <ExternalLink />
@@ -62,7 +63,7 @@ const ProjectCard = () => {
                 ) : (
                   <button
                     onClick={() => handlePopup("Preview")}
-                    className='flex items-center gap-2 text-xl font-semibold hover:text-main-color transition-colors'
+                    className="flex items-center gap-2 text-xl font-semibold hover:text-main-color transition-colors"
                   >
                     Preview
                     <ExternalLink />
@@ -74,7 +75,7 @@ const ProjectCard = () => {
                     href={proj.sourceLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className='flex items-center gap-2 text-xl font-semibold hover:text-main-color transition-colors'
+                    className="flex items-center gap-2 text-xl font-semibold hover:text-main-color transition-colors"
                   >
                     Source_Code
                     <svg
@@ -88,25 +89,27 @@ const ProjectCard = () => {
                 ) : (
                   <button
                     onClick={() => handlePopup("Source_Code")}
-                    className='flex items-center gap-2 text-xl font-semibold hover:text-main-color transition-colors'
+                    className="flex items-center gap-2 text-xl font-semibold hover:text-main-color transition-colors"
                   >
                     Source_Code
                   </button>
                 )}
-
               </div>
             </div>
 
-            <div className='relative w-1/2 max-lg:w-full h-95 overflow-hidden rounded-2xl shadow-[0_5px_5px_rgba(0,0,0,0.35)]'>
-
+            <div className="relative w-1/2 max-lg:w-full h-95 overflow-hidden rounded-2xl shadow-[0_5px_5px_rgba(0,0,0,0.35)]">
               {proj.previewLink?.trim() ? (
-                <a href={proj.previewLink} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={proj.previewLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Image
                     src={proj.image}
                     width={1000}
                     height={3000}
-                    alt='Preview'
-                    className='object-cover w-full h-auto object-top cursor-pointer transition-transform ease-linear duration-[15s] hover:animate-[vertical-scroll-animation_15s_linear_infinite]'
+                    alt="Preview"
+                    className="object-cover w-full h-auto object-top cursor-pointer transition-transform ease-linear duration-[15s] hover:animate-[vertical-scroll-animation_15s_linear_infinite]"
                   />
                 </a>
               ) : (
@@ -114,21 +117,20 @@ const ProjectCard = () => {
                   src={proj.image}
                   width={1000}
                   height={3000}
-                  alt='Preview'
-                  className='object-cover w-full h-auto object-top'
+                  alt="Preview"
+                  className="object-cover w-full h-auto object-top"
                 />
               )}
-
             </div>
-          </section>
-        )
+          </motion.section>
+        );
       })}
 
       {showPopup && (
         <Popup close={() => setShowPopup(false)} type={popupType} />
       )}
     </>
-  )
-}
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;

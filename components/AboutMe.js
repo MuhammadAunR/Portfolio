@@ -13,8 +13,8 @@ const AboutMe = () => {
         data-aos="fade-up"
       >
         <motion.div
-          initial={{ opacity: 0, x: -30, filter: "blur(8px)" }}
-          whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.96, ease: "linear" }}
           viewport={{ once: true }}
           className="relative"
@@ -37,8 +37,8 @@ const AboutMe = () => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, x: 30, filter: "blur(8px)" }}
-          whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.96, ease: "linear" }}
           viewport={{ once: true }}
           className="lg:w-1/2 flex max-lg:gap-5 flex-col gap-1 max-lg:text-center"
