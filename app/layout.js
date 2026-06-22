@@ -1,6 +1,5 @@
 import { Ubuntu } from "next/font/google";
 import "./globals.css";
-import AosInit from "../components/AosInit";
 
 const ubuntu = Ubuntu({
   variable: "--font-Ubuntu",
@@ -18,7 +17,6 @@ export default function RootLayout({ children }) {
     <html lang="en"
       className="scroll-smooth">
       <body className={`${ubuntu.variable} antialiased`} >
-        <AosInit />
         {children}
       </body>
     </html>
