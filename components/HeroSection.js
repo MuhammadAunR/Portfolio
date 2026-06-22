@@ -65,7 +65,7 @@ const HeroSection = () => {
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.96, ease: "easeInOut" }}
+              transition={{ duration: 0.96, ease: "linear" }}
               viewport={{ once: true }}
               className="text-gray-800 font-bold text-5xl max-lg:text-center max-sm:text-4xl"
             >
@@ -74,7 +74,7 @@ const HeroSection = () => {
             <motion.p
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.96, ease: "easeInOut" }}
+              transition={{ duration: 0.96, ease: "linear" }}
               viewport={{ once: true }}
               className="text-xl max-sm:text-lg text-gray-600 lg:text-justify text-center"
             >
@@ -87,7 +87,7 @@ const HeroSection = () => {
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.96, ease: "easeInOut" }}
+              transition={{ duration: 0.96, ease: "linear" }}
               viewport={{ once: true }}
               className="flex gap-5 items-center max-lg:justify-center"
             >
@@ -148,7 +148,7 @@ const HeroSection = () => {
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.96, ease: "easeInOut" }}
+            transition={{ duration: 0.96, ease: "linear" }}
             viewport={{ once: true }}
             className="overflow-hidden rounded-4xl lg:mr-22 profile-blob"
           >
@@ -166,7 +166,7 @@ const HeroSection = () => {
         <motion.section
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.96, ease: "easeInOut" }}
+          transition={{ duration: 0.96, ease: "linear" }}
           viewport={{ once: true }}
           className="my-15 flex gap-7 items-center max-lg:flex-wrap max-lg:justify-center"
         >
