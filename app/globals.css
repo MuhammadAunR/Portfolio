@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-main-color: #1A2FB9;
+  --color-main-color: #1a2fb9;
 }
 
 :root {
@@ -10,6 +10,14 @@
 
 body {
   font-family: var(--font-Ubuntu);
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
 }
 
 /* Text Glittering Effect  */

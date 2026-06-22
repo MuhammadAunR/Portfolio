@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <main className="max-w-384 mx-auto overflow-x-hidden">
-        <header className="bg-gray-100 h-fit w-fit">
+        <header className="bg-linear-to-b from-main-color/20 to-white h-fit w-fit">
           <Navbar />
           <HeroSection />
         </header>
@@ -49,7 +49,7 @@ export default function Home() {
           </section>
         </section>
 
-        <section>
+        <section className="">
           <ContactUs />
         </section>
       </main>
