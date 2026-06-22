@@ -21,22 +21,22 @@ const Navbar = () => {
         </div>
         <ul className="flex gap-10 max-lg:gap-10 font-semibold text-lg bg-white/50 shadow-[2px_2px_10px_rgba(0,0,0,0.8)] backdrop-blur-lg rounded-full px-7 py-3 max-md:hidden">
           <Link href={"#home"}>
-            <li className="cursor-pointer hover:text-main-color transition-colors ease-in-out">
+            <li className="cursor-pointer hover:text-main-color transition-colors duration-700 ease-in-out">
               Home
             </li>
           </Link>
           <Link href={"#about"}>
-            <li className="cursor-pointer hover:text-main-color transition-colors ease-in-out">
+            <li className="cursor-pointer hover:text-main-color transition-colors duration-700 ease-in-out">
               About
             </li>
           </Link>
           <Link href={"#project"}>
-            <li className="cursor-pointer hover:text-main-color transition-colors ease-in-out">
+            <li className="cursor-pointer hover:text-main-color transition-colors duration-700 ease-in-out">
               Projects
             </li>
           </Link>
           <Link href={"#contactus"}>
-            <li className="cursor-pointer hover:text-main-color transition-colors ease-in-out">
+            <li className="cursor-pointer hover:text-main-color transition-colors duration-700 ease-in-out">
               Contact
             </li>
           </Link>
