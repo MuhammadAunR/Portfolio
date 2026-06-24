@@ -153,7 +153,7 @@ const HeroSection = () => {
             className="overflow-hidden rounded-4xl lg:mr-22 profile-blob"
           >
             <Image
-              src={"/profile.jpg"}
+              src={"/profile.webp"}
               alt="Profile Picture"
               width={400}
               height={0}
