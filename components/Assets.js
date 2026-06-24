@@ -1,11 +1,11 @@
 export const projects = [
     {
-        title: "Coffee Shop",
-        description: "Built a full online ordering experience for a coffee brand — mobile-first design with menu browsing and a smooth checkout flow to drive online sales. ☕",
-        stack: ["Next.js", "Tailwind"],
-        previewLink: "https://coffeeshop-7ad9.vercel.app/",
-        sourceLink: "https://github.com/MuhammadAunR/Coffee-Shop",
-        image: "/p1-coffeeshop.webp",
+        title: "Odour",
+        description: "A complete e-commerce platform with CMS-powered product management, cart system, and scalable backend — built for real retail operations. 🛍️",
+        stack: ["Next.js", "Tailwind", "Framer-Motion", "Node.js"],
+        previewLink: "https://odour-byma.vercel.app/",
+        sourceLink: "https://github.com/MuhammadAunR/Odour",
+        image: "/p10-odour.webp",
     },
     {
         title: "Shop.CO",
@@ -70,5 +70,13 @@ export const projects = [
         previewLink: "https://larizo.vercel.app/",
         sourceLink: "https://github.com/MuhammadAunR/Larizo",
         image: "/p9-larizo.webp",
-    }
+    },
+    {
+        title: "Coffee Shop",
+        description: "Built a full online ordering experience for a coffee brand — mobile-first design with menu browsing and a smooth checkout flow to drive online sales. ☕",
+        stack: ["Next.js", "Tailwind"],
+        previewLink: "https://coffeeshop-7ad9.vercel.app/",
+        sourceLink: "https://github.com/MuhammadAunR/Coffee-Shop",
+        image: "/p1-coffeeshop.webp",
+    },
 ];
