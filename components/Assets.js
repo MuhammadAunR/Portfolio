@@ -1,7 +1,7 @@
 export const projects = [
     {
         title: "Odour",
-        description: "A complete e-commerce platform with CMS-powered product management, cart system, and scalable backend — built for real retail operations. 🛍️",
+        description: "A premium perfume storefront designed with elegant visuals, immersive product presentation, responsive navigation, and smooth user interactions. 🌸",
         stack: ["Next.js", "Tailwind", "Framer-Motion", "Node.js"],
         previewLink: "https://odour-byma.vercel.app/",
         sourceLink: "https://github.com/MuhammadAunR/Odour",
