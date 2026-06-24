@@ -21,7 +21,7 @@ const AboutMe = () => {
         >
           <div className="overflow-hidden rounded-2xl h-90 w-150 max-sm:w-90 max-sm:h-60 max-sm:px-5 relative">
             <Image
-              src={"/aboutme.jpg"}
+              src={"/aboutme.webp"}
               alt="About Me"
               fill
               unoptimized="false"
