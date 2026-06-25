@@ -1,6 +1,7 @@
 import { Ubuntu } from "next/font/google";
 import "./globals.css";
 import LenisWrapper from "@/components/LenisWrapper";
+import CanvasCursor from "./utils";
 
 const ubuntu = Ubuntu({
   variable: "--font-Ubuntu",
@@ -18,8 +19,9 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth">
       <body className={`${ubuntu.variable} antialiased`}>
         <LenisWrapper>
+          <CanvasCursor />
           {children}
-          </LenisWrapper>
+        </LenisWrapper>
       </body>
     </html>
   );
