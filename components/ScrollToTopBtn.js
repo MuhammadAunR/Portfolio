@@ -29,7 +29,7 @@ const ScrollToTopBtn = () => {
                         exit={{ opacity: 0, }}
                         transition={{ duration: 0.6, }}
                         onClick={handleScrollToTop}
-                        className='fixed bottom-7 right-7 z-100 flex flex-col gap-5 overflow-hidden bg-main-color p-2 rounded-full cursor-pointer w-10 h-10 hover:h-35 transition-all duration-300 ease-in-out group'>
+                        className='fixed bottom-7 right-7 z-100 flex flex-col gap-5 overflow-hidden bg-main-color/70 backdrop-blur-sm p-2 rounded-full cursor-pointer w-10 h-10 hover:h-35 transition-all duration-300 ease-in-out group'>
                         <span className='shrink-0'>
                             <ArrowUpFromDot color='white' />
                         </span>
