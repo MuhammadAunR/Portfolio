@@ -1,13 +1,23 @@
 "use client";
 import { motion } from "motion/react";
-import React from "react";
+import React, { useEffect } from "react";
 
 const Popup = ({ type, close }) => {
-  if (close) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "";
-  }
+
+  useEffect(() => {
+    if (close) {
+      document.body.style.overflow = "hidden";
+      window.lenis?.stop()
+    } else {
+      document.body.style.overflow = "";
+      window.lenis?.start()
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+      window.lenis?.start()
+    }
+  }, [close])
 
   let message = "";
 
