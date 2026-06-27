@@ -1,7 +1,7 @@
 export const projects = [
     {
         title: "Odour",
-        description: "A premium perfume storefront designed with elegant visuals, immersive product presentation, responsive navigation, and smooth user interactions. 🌸",
+        description: "A scalable e-commerce solution that helps perfume brands showcase products, streamline online sales, and deliver a seamless shopping experience through optimized product discovery and modern web performance. 🛍️",
         stack: ["Next.js", "Tailwind", "Framer-Motion", "Node.js"],
         previewLink: "https://odour-byma.vercel.app/",
         sourceLink: "https://github.com/MuhammadAunR/Odour",
@@ -66,7 +66,7 @@ export const projects = [
     {
         title: "Larizo",
         description: "Designed and developed a luxury fragrance brand website from scratch — crafted a premium UI, smooth user experience, and mobile-first layout that reflects elegance and high-end branding.",
-        stack: ["Next.js","Framer Motion", "Tailwind"],
+        stack: ["Next.js", "Framer Motion", "Tailwind"],
         previewLink: "https://larizo.vercel.app/",
         sourceLink: "https://github.com/MuhammadAunR/Larizo",
         image: "/p9-larizo.webp",
