@@ -59,7 +59,7 @@ const HeroSection = () => {
 
   return (
     <>
-      <section id="home" className="w-10/12 mx-auto py-28">
+      <section id="home" className="w-10/12 mx-auto pt-28 lg:py-28">
         <section className="flex justify-between items-center gap-x-2 gap-y-7 max-lg:flex-wrap-reverse max-lg:justify-center lg:pt-28">
           <div className="w-1/2 max-lg:w-full flex flex-col gap-7">
             <motion.div
