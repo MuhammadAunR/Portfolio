@@ -9,8 +9,7 @@ const AboutMe = () => {
     <>
       <main
         id="about"
-        className="h-fit py-24 flex gap-3  max-lg:gap-10 justify-between items-center max-lg:flex-wrap max-lg:justify-center"
-        data-aos="fade-up"
+        className="h-fit pb-24 flex gap-3  max-lg:gap-10 justify-between items-center max-lg:flex-wrap max-lg:justify-center"
       >
         <motion.div
           initial={{ opacity: 0, x: -30 }}
