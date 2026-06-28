@@ -20,7 +20,7 @@ export default function Home() {
         </section>
 
         <section id="project" className="projects bg-gray-100">
-          <section className="max-w-325 w-10/12 mx-auto py-10">
+          <section className="max-w-325 mx-5 lg:w-10/12 lg:mx-auto py-10">
             <div className="py-12">
               <h3 className="uppercase text-main-color font-bold">Portfolio</h3>
               <h2 className="text-2xl font-semibold shine-wrapper">
