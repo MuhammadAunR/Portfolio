@@ -1,8 +1,8 @@
 import { Ubuntu } from "next/font/google";
 import "./globals.css";
 import LenisWrapper from "@/components/LenisWrapper";
-import CanvasCursor from "./utils";
 import ScrollToTopBtn from "@/components/ScrollToTopBtn";
+import SmoothFollower from "@/hooks/SmoothFollower";
 
 const ubuntu = Ubuntu({
   variable: "--font-Ubuntu",
@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       <body className={`${ubuntu.variable} antialiased`}>
         <LenisWrapper>
           <ScrollToTopBtn />
-          <CanvasCursor />
+          <SmoothFollower />
           {children}
         </LenisWrapper>
       </body>

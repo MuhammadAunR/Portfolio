@@ -42,7 +42,7 @@ const ProjectCard = () => {
                 {proj.stack.map((item, i) => (
                   <div
                     key={i}
-                    className="bg-white text-lg shadow-[5px_5px_7px_rgba(0,0,0,0.35)] px-4 py-2"
+                    className="bg-black/10 backdrop-blur-sm rounded-full text-lg shadow-[5px_5px_7px_rgba(0,0,0,0.35)] px-4 py-2"
                   >
                     {item}
                   </div>
