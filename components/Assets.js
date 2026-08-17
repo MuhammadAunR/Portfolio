@@ -1,5 +1,13 @@
 export const projects = [
     {
+        title: "Velora Estates",
+        description: "A modern real estate website featuring reusable components, responsive layouts, property showcases, interactive sections, smooth animations, and conversion-focused contact experiences. 🏠",
+        stack: ["Next.js", "Tailwind CSS", "Motion"],
+        previewLink: "https://velora-real-estate-byma.vercel.app/",
+        sourceLink: "https://github.com/MuhammadAunR/Velora-Real-Estate.git",
+        image: "/p11-velora.webp",
+    },
+    {
         title: "Odour",
         description: "A scalable e-commerce solution that helps perfume brands showcase products, streamline online sales, and deliver a seamless shopping experience through optimized product discovery and modern web performance. 🛍️",
         stack: ["Next.js", "Tailwind", "Framer-Motion", "Node.js"],
