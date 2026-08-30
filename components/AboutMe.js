@@ -53,16 +53,8 @@ const AboutMe = () => {
               A dedicated MERN Stack Developer based in Pakistan
             </span>
           </h2>
-          <code className="text-gray-600 text-justify text-xl cursor-pointer max-lg:text-center">
-            I am a web developer with hands-on experience building modern,
-            scalable web applications using React, Next.js, Node.js, Express,
-            and MongoDB. I focus on writing clean, maintainable code and
-            developing user-centric interfaces backed by reliable backend
-            systems. I have practical experience consuming REST APIs,
-            implementing authentication flows, and integrating frontend
-            applications with backend services. I continuously improve my skills
-            through real-world projects and value problem-solving, performance
-            optimization, and clear system design.
+          <code className="text-gray-600 text-justify text-xl cursor-pointer lg:leading-6">
+            I help businesses turn ideas into fast, reliable, and great-looking websites and web apps. As a MERN Stack Developer (React, Next.js, Node.js, MongoDB), I handle everything from the first line of code to a fully deployed product — clean UI, smooth animations, secure authentication, and a backend that doesn't break when your business grows. I've built e-commerce stores, real estate platforms, restaurant and booking sites, and admin dashboards for real-world use cases. Whether you need a landing page that converts, a full online store, or a custom web app for your business, I focus on shipping something that actually works — not just something that looks good in a screenshot. Let's talk about what you're trying to build.
           </code>
         </motion.div>
       </main>
