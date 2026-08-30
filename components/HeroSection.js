@@ -78,11 +78,7 @@ const HeroSection = () => {
               viewport={{ once: true }}
               className="text-xl max-sm:text-lg text-gray-600 lg:text-justify text-center"
             >
-              Hi, I'm <strong>Muhammad Aun</strong>. I am a{" "}
-              <strong>MERN Stack Developer</strong> creating user-friendly web
-              applications and managing secure, scalable cloud infrastructure. I
-              bridge the gap between development and operations, ensuring
-              efficient, high-quality solutions 👨‍💻
+              I'm <strong>Muhammad Aun</strong>, a <strong>MERN Stack Developer</strong> who builds premium, conversion-focused websites for e-commerce, real estate, and hospitality brands. I turn Figma designs and rough ideas into fast, polished, production-ready web apps — from pixel-perfect animated frontends to the backend logic and databases behind them.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, x: -30 }}
