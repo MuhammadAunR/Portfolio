@@ -68,7 +68,7 @@ export default function SmoothFollower() {
       cancelAnimationFrame(animationId);
     };
   }, []);
-  if (typeof window === 'undefined') return null;
+  
   return (
     <div className="pointer-events-none fixed inset-0 z-50">
       <div
